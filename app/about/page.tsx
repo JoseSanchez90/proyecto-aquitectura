@@ -5,10 +5,10 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Navbar } from "@/components/navbar"
 import { Footer } from "@/components/footer"
-import user3 from "@/public/img/user3.jpg"
-import user2 from "@/public/img/user2.jpg"
-import studio from "@/public/img/image09.jpg"
-import mwLogo from "@/public/img/mwlogo.png"
+import user3 from "@/public/img/user3.webp"
+import user2 from "@/public/img/user2.webp"
+import studio from "@/public/img/image09.webp"
+import mwLogo from "@/public/img/mwlogo.webp"
 import { ArrowRightIcon } from "lucide-react"
 
 export default function AboutPage() {
@@ -22,13 +22,13 @@ export default function AboutPage() {
             src={studio}
             alt="Nuestro estudio de arquitectura"
             fill
-            className="object-cover brightness-[0.7]"
+            className="object-cover brightness-[0.5]"
             priority
           />
           <div className="absolute inset-0 flex flex-col text-white items-center justify-center px-4 text-center">
             <h1 className="max-w-4xl text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl">Nuestro estudio</h1>
             <p className="mt-6 max-w-2xl text-lg font-medium">
-              Conoce nuestra historia, filosofía y el equipo detrás de ARQSTUDIO
+              Conoce nuestra historia, filosofía y el equipo detrás de <strong className="text-blue-500">MW</strong><strong>TRAZO</strong>
             </p>
           </div>
         </section>
@@ -39,7 +39,7 @@ export default function AboutPage() {
             <div className="flex flex-col justify-center">
               <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">Nuestra historia</h2>
               <p className="mt-6 text-sm sm:text-xl">
-                Fundado en 2015 por un grupo de arquitectos apasionados,<strong> MWTRAZO</strong> nació con la visión de crear espacios
+                Fundado en 2015 por un grupo de arquitectos apasionados,<strong className="text-blue-600"> MW</strong><strong>TRAZO</strong> nació con la visión de crear espacios
                 que transformaran positivamente la vida de las personas y respetaran el entorno natural.
               </p>
               <p className="mt-4 text-sm sm:text-xl">
@@ -268,8 +268,8 @@ export default function AboutPage() {
               Nuestro equipo está preparado para transformar tus ideas en espacios excepcionales. Contáctanos hoy mismo
               para comenzar.
             </p>
-            <Button size="lg" variant="white" className="mt-8 cursror-pointer">
-              <Link href="/contacto">Contactar ahora</Link>
+            <Button variant="white" className="mt-6 cursror-pointer">
+              <Link href="/contacto" scroll={false}>Contactar ahora</Link>
               <ArrowRightIcon className="ml-2" />
             </Button>
           </div>

@@ -8,12 +8,12 @@ import { ProjectCard } from "@/components/project-card"
 import { Navbar } from "@/components/navbar"
 import { Footer } from "@/components/footer"
 import { TestimonialCard } from "@/components/testimonial-card"
-import ImagePrimary from "@/public/img/image01.jpg"
-import ImageSecondary from "@/public/img/image02.jpg"
+import ImagePrimary from "@/public/img/image01.webp"
+import ImageSecondary from "@/public/img/image02.webp"
 import { FaRegArrowAltCircleRight } from "react-icons/fa"
-import { MdOutlineHomeRepairService } from "react-icons/md"
 import { FiPlusCircle } from "react-icons/fi"
 import { Building2Icon } from "lucide-react"
+import { BsWhatsapp } from "react-icons/bs"
 
 export default function Home() {
   return (
@@ -38,12 +38,12 @@ export default function Home() {
             </p>
             <div className="mt-10 flex flex-col gap-4 sm:flex-row">
               <Button variant="blueDark" size="lg" className="cursor-pointer">
-                <Link href="/proyectos">Ver proyectos</Link>
+                <Link href="/proyectos" scroll={false}>Ver proyectos</Link>
                 <FaRegArrowAltCircleRight className="ml-1" />
               </Button>
               <Button size="lg" variant="white" className="cursor-pointer">
-                <Link href="/servicios">Servicios</Link>
-                <MdOutlineHomeRepairService className="ml-1" />
+                <Link href="http://wa.me/51960041583" target="_autoblank">Conversemos</Link>
+                <BsWhatsapp className="ml-1" />
               </Button>
             </div>
           </div>
@@ -72,7 +72,7 @@ export default function Home() {
                 </p>
                 <div className="mt-8">
                   <Button variant="blueDark" className="">
-                    <Link href="/about">Conocer más sobre nosotros</Link>
+                    <Link href="/about" scroll={false}>Conocer más sobre nosotros</Link>
                     <Building2Icon className="ml-2" />
                   </Button>
                 </div>
@@ -105,37 +105,37 @@ export default function Home() {
                   <ProjectCard
                     title="Casa Horizonte"
                     category="Residencial"
-                    image="/img/image03.jpg"
+                    image="/img/image03.webp"
                     href="/proyectos/casa-horizonte"
                   />
                   <ProjectCard
                     title="Oficinas Nexus"
                     category="Comercial"
-                    image="/img/image03.jpg"
+                    image="/img/image03.webp"
                     href="/proyectos/oficinas-nexus"
                   />
                   <ProjectCard
                     title="Biblioteca Municipal"
                     category="Público"
-                    image="/img/image03.jpg"
+                    image="/img/image03.webp"
                     href="/proyectos/biblioteca-municipal"
                   />
                   <ProjectCard
                     title="Residencia Mirador"
                     category="Residencial"
-                    image="/img/image03.jpg"
+                    image="/img/image03.webp"
                     href="/proyectos/residencia-mirador"
                   />
                   <ProjectCard
                     title="Centro Comercial Avenida"
                     category="Comercial"
-                    image="/img/image03.jpg"
+                    image="/img/image03.webp"
                     href="/proyectos/centro-comercial-avenida"
                   />
                   <ProjectCard
                     title="Parque Urbano Central"
                     category="Público"
-                    image="/img/image03.jpg"
+                    image="/img/image03.webp"
                     href="/proyectos/parque-urbano-central"
                   />
                 </div>
@@ -145,19 +145,19 @@ export default function Home() {
                   <ProjectCard
                     title="Casa Horizonte"
                     category="Residencial"
-                    image="/img/image03.jpg"
+                    image="/img/image03.webp"
                     href="/proyectos/casa-horizonte"
                   />
                   <ProjectCard
                     title="Residencia Mirador"
                     category="Residencial"
-                    image="/img/image03.jpg"
+                    image="/img/image03.webp"
                     href="/proyectos/residencia-mirador"
                   />
                   <ProjectCard
                     title="Villa Moderna"
                     category="Residencial"
-                    image="/img/image03.jpg"
+                    image="/img/image03.webp"
                     href="/proyectos/villa-moderna"
                   />
                 </div>
@@ -167,13 +167,13 @@ export default function Home() {
                   <ProjectCard
                     title="Oficinas Nexus"
                     category="Comercial"
-                    image="/img/image03.jpg"
+                    image="/img/image03.webp"
                     href="/proyectos/oficinas-nexus"
                   />
                   <ProjectCard
                     title="Centro Comercial Avenida"
                     category="Comercial"
-                    image="/img/image03.jpg"
+                    image="/img/image03.webp"
                     href="/proyectos/centro-comercial-avenida"
                   />
                 </div>
@@ -183,13 +183,13 @@ export default function Home() {
                   <ProjectCard
                     title="Biblioteca Municipal"
                     category="Público"
-                    image="/img/image03.jpg"
+                    image="/img/image03.webp"
                     href="/proyectos/biblioteca-municipal"
                   />
                   <ProjectCard
                     title="Parque Urbano Central"
                     category="Público"
-                    image="/img/image03.jpg"
+                    image="/img/image03.webp"
                     href="/proyectos/parque-urbano-central"
                   />
                 </div>
@@ -199,7 +199,7 @@ export default function Home() {
             <div className="mt-12 text-center">
               <Button variant="blueDark">
                 <FiPlusCircle className="mr-1" />
-                <Link href="/proyectos">Ver todos los proyectos</Link>
+                <Link href="/proyectos" scroll={false}>Ver todos los proyectos</Link>
               </Button>
             </div>
           </div>
@@ -395,19 +395,19 @@ export default function Home() {
                 quote="El equipo entendió perfectamente nuestra visión y la transformó en un diseño que superó todas nuestras expectativas."
                 author="Carlos Méndez"
                 role="Cliente residencial"
-                avatar="/img/user1.jpg"
+                avatar="/img/user1.webp"
               />
               <TestimonialCard
                 quote="La atención al detalle y el compromiso con la sostenibilidad fueron factores decisivos para elegir este estudio."
                 author="Laura Sánchez"
                 role="Directora de proyectos"
-                avatar="/img/user3.jpg"
+                avatar="/img/user3.webp"
               />
               <TestimonialCard
                 quote="Lograron transformar un espacio complicado en una oficina moderna y funcional que refleja perfectamente nuestra marca."
                 author="Miguel Torres"
                 role="CEO, Innovatech"
-                avatar="/img/user2.jpg"
+                avatar="/img/user2.webp"
               />
             </div>
           </div>

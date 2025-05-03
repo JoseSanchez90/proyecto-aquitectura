@@ -1,14 +1,13 @@
 "use client"
 
 import Image from "next/image"
-import Link from "next/link"
 import { Mail, MapPin, Phone, SendIcon } from "lucide-react"
 
 import { Button } from "@/components/ui/button"
 import { Navbar } from "@/components/navbar"
 import { Footer } from "@/components/footer"
 import { useState } from "react"
-import ImageTen from "@/public/img/image10.jpg"
+import ImageTen from "@/public/img/image10.webp"
 import { PrivacyPolicyDialog } from "@/components/PrivacityPolicyDialog"
 
 export default function ContactoPage() {

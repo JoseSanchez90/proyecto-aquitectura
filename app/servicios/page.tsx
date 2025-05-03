@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Navbar } from "@/components/navbar"
 import { Footer } from "@/components/footer"
-import ImageEight from "@/public/img/image08.jpg"
+import ImageEight from "@/public/img/image08.webp"
 import ImageEleven from "@/public/img/image11.webp"
 
 export default function ServiciosPage() {
@@ -32,7 +32,7 @@ export default function ServiciosPage() {
         </section>
 
         {/* Services Overview */}
-        <section className="container mx-auto px-4 py-16">
+        <section className="container mx-auto px-16 py-16">
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
             <Card className="shadow-lg shadow-gray-400">
               <CardContent className="flex flex-col items-center p-6 text-center">
@@ -236,49 +236,49 @@ export default function ServiciosPage() {
         </section>
 
         {/* Featured Service */}
-        <section className="bg-blue-100 py-24">
+        <section className="bg-blue-100 px-20 py-24">
           <div className="container mx-auto px-4">
             <div className="grid gap-12 md:grid-cols-2">
               <div className="flex flex-col justify-center">
                 <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">Arquitectura sostenible</h2>
-                <p className="mt-6 text-sm sm:text-xl">
+                <p className="mt-6 text-sm sm:text-lg">
                   En <strong>MWTRAZO</strong>, la sostenibilidad no es solo una tendencia, sino un compromiso fundamental en todos
                   nuestros proyectos. Nuestro enfoque de arquitectura sostenible integra consideraciones ambientales,
                   sociales y económicas para diseñar proyectos que sean respetuosos con el planeta y proporcionen espacios
                   saludables para sus ocupantes.
                 </p>
-                <ul className="mt-6 space-y-3 text-sm sm:text-xl">
-                  <li className="flex items-start">
+                <ul className="mt-6 space-y-2 text-sm sm:text-lg">
+                  <li className="flex items-center">
                     <Check className="mr-2 h-5 w-5 text-primary" />
                     <span>Diseño bioclimático adaptado al entorno</span>
                   </li>
-                  <li className="flex items-start">
+                  <li className="flex items-center">
                     <Check className="mr-2 h-5 w-5 text-primary" />
                     <span>Sistemas de energía renovable integrados</span>
                   </li>
-                  <li className="flex items-start">
+                  <li className="flex items-center">
                     <Check className="mr-2 h-5 w-5 text-primary" />
                     <span>Gestión eficiente del agua</span>
                   </li>
-                  <li className="flex items-start">
+                  <li className="flex items-center">
                     <Check className="mr-2 h-5 w-5 text-primary" />
                     <span>Materiales ecológicos y de bajo impacto ambiental</span>
                   </li>
-                  <li className="flex items-start">
+                  <li className="flex items-center">
                     <Check className="mr-2 h-5 w-5 text-primary" />
                     <span>Certificaciones LEED, BREEAM y Passivhaus</span>
                   </li>
                 </ul>
                 <div className="mt-8">
                   <Button variant="blueDark" className="cursor-pointer">
-                    <Link href="/servicios/arquitectura-sostenible">
+                    <Link href="/servicios/arquitectura-sostenible" scroll={false}>
                       Más información 
                     </Link>
                     <ArrowRight className="ml-2 h-4 w-4" />
                   </Button>
                 </div>
               </div>
-              <div className="relative aspect-square overflow-hidden shadow rounded-xl md:aspect-auto md:h-full">
+              <div className="relative aspect-square overflow-hidden shadow rounded-lg md:aspect-auto md:h-full">
                 <Image
                   src={ImageEight}
                   alt="Arquitectura sostenible"
@@ -320,8 +320,8 @@ export default function ServiciosPage() {
                   </li>
                 </ul>
                 <div className="mt-auto pt-6">
-                  <Button variant="blueDark" className="w-full">
-                    <Link href="/contacto">Solicitar presupuesto</Link>
+                  <Button variant="blueDark" className="w-full cursor-pointer">
+                    <Link href="/contacto" scroll={false}>Solicitar presupuesto</Link>
                     <ArrowRightIcon className="ml-2" />
                   </Button>
                 </div>
@@ -359,8 +359,8 @@ export default function ServiciosPage() {
                   </li>
                 </ul>
                 <div className="mt-auto pt-6">
-                  <Button variant="blueDark" className="w-full">
-                    <Link href="/contacto">Solicitar presupuesto</Link>
+                  <Button variant="blueDark" className="w-full cursor-pointer">
+                    <Link href="/contacto" scroll={false}>Solicitar presupuesto</Link>
                     <ArrowRightIcon className="ml-2" />
                   </Button>
                 </div>
@@ -399,8 +399,8 @@ export default function ServiciosPage() {
                   </li>
                 </ul>
                 <div className="mt-auto pt-6">
-                  <Button variant="blueDark" className="w-full">
-                    <Link href="/contacto">Solicitar presupuesto</Link>
+                  <Button variant="blueDark" className="w-full cursor-pointer">
+                    <Link href="/contacto" scroll={false}>Solicitar presupuesto</Link>
                     <ArrowRightIcon className="ml-2" />
                   </Button>
                 </div>

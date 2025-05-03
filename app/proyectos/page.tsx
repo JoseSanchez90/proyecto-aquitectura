@@ -1,14 +1,14 @@
 import Image from "next/image"
 import Link from "next/link"
-import { ArrowRight, ImagesIcon } from "lucide-react"
+import { ArrowRight } from "lucide-react"
 
 import { Button } from "@/components/ui/button"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { ProjectCard } from "@/components/project-card"
 import { Navbar } from "@/components/navbar"
 import { Footer } from "@/components/footer"
-import ImageFour from "@/public/img/image04.jpg"
-import ImageSix from "@/public/img/image06.jpg"
+import ImageFour from "@/public/img/image04.webp"
+import ImageSix from "@/public/img/image06.webp"
 
 export default function ProyectosPage() {
   return (
@@ -48,55 +48,55 @@ export default function ProyectosPage() {
                 <ProjectCard
                   title="Casa Horizonte"
                   category="Residencial"
-                  image="/img/image05.jpg"
+                  image="/img/image05.webp"
                   href="/proyectos/casa-horizonte"
                 />
                 <ProjectCard
                   title="Oficinas Nexus"
                   category="Comercial"
-                  image="/img/image05.jpg"
+                  image="/img/image05.webp"
                   href="/proyectos/oficinas-nexus"
                 />
                 <ProjectCard
                   title="Biblioteca Municipal"
                   category="Público"
-                  image="/img/image05.jpg"
+                  image="/img/image05.webp"
                   href="/proyectos/biblioteca-municipal"
                 />
                 <ProjectCard
                   title="Residencia Mirador"
                   category="Residencial"
-                  image="/img/image05.jpg"
+                  image="/img/image05.webp"
                   href="/proyectos/residencia-mirador"
                 />
                 <ProjectCard
                   title="Centro Comercial Avenida"
                   category="Comercial"
-                  image="/img/image05.jpg"
+                  image="/img/image05.webp"
                   href="/proyectos/centro-comercial-avenida"
                 />
                 <ProjectCard
                   title="Parque Urbano Central"
                   category="Público"
-                  image="/img/image05.jpg"
+                  image="/img/image05.webp"
                   href="/proyectos/parque-urbano-central"
                 />
                 <ProjectCard
                   title="Villa Moderna"
                   category="Residencial"
-                  image="/img/image05.jpg"
+                  image="/img/image05.webp"
                   href="/proyectos/villa-moderna"
                 />
                 <ProjectCard
                   title="Torre Corporativa Elevate"
                   category="Comercial"
-                  image="/img/image05.jpg"
+                  image="/img/image05.webp"
                   href="/proyectos/torre-corporativa"
                 />
                 <ProjectCard
                   title="Museo de Arte Contemporáneo"
                   category="Público"
-                  image="/img/image05.jpg"
+                  image="/img/image05.webp"
                   href="/proyectos/museo-arte"
                 />
               </div>
@@ -106,25 +106,25 @@ export default function ProyectosPage() {
                 <ProjectCard
                   title="Casa Horizonte"
                   category="Residencial"
-                  image="/img/image05.jpg"
+                  image="/img/image05.webp"
                   href="/proyectos/casa-horizonte"
                 />
                 <ProjectCard
                   title="Residencia Mirador"
                   category="Residencial"
-                  image="/img/image05.jpg"
+                  image="/img/image05.webp"
                   href="/proyectos/residencia-mirador"
                 />
                 <ProjectCard
                   title="Villa Moderna"
                   category="Residencial"
-                  image="/img/image05.jpg"
+                  image="/img/image05.webp"
                   href="/proyectos/villa-moderna"
                 />
                 <ProjectCard
                   title="Apartamentos Skyline"
                   category="Residencial"
-                  image="/img/image05.jpg"
+                  image="/img/image05.webp"
                   href="/proyectos/apartamentos-skyline"
                 />
               </div>
@@ -134,25 +134,25 @@ export default function ProyectosPage() {
                 <ProjectCard
                   title="Oficinas Nexus"
                   category="Comercial"
-                  image="/img/image05.jpg"
+                  image="/img/image05.webp"
                   href="/proyectos/oficinas-nexus"
                 />
                 <ProjectCard
                   title="Centro Comercial Avenida"
                   category="Comercial"
-                  image="/img/image05.jpg"
+                  image="/img/image05.webp"
                   href="/proyectos/centro-comercial-avenida"
                 />
                 <ProjectCard
                   title="Torre Corporativa Elevate"
                   category="Comercial"
-                  image="/img/image05.jpg"
+                  image="/img/image05.webp"
                   href="/proyectos/torre-corporativa"
                 />
                 <ProjectCard
                   title="Hotel Boutique Serenity"
                   category="Comercial"
-                  image="/img/image05.jpg"
+                  image="/img/image05.webp"
                   href="/proyectos/hotel-boutique"
                 />
               </div>
@@ -162,25 +162,25 @@ export default function ProyectosPage() {
                 <ProjectCard
                   title="Biblioteca Municipal"
                   category="Público"
-                  image="/img/image05.jpg"
+                  image="/img/image05.webp"
                   href="/proyectos/biblioteca-municipal"
                 />
                 <ProjectCard
                   title="Parque Urbano Central"
                   category="Público"
-                  image="/img/image05.jpg"
+                  image="/img/image05.webp"
                   href="/proyectos/parque-urbano-central"
                 />
                 <ProjectCard
                   title="Museo de Arte Contemporáneo"
                   category="Público"
-                  image="/img/image05.jpg"
+                  image="/img/image05.webp"
                   href="/proyectos/museo-arte"
                 />
                 <ProjectCard
                   title="Centro Cultural Metropolitano"
                   category="Público"
-                  image="/img/image05.jpg"
+                  image="/img/image05.webp"
                   href="/proyectos/centro-cultural"
                 />
               </div>
@@ -229,7 +229,7 @@ export default function ProyectosPage() {
                 </ul>
                 <div className="mt-8">
                   <Button variant="blueDark">
-                    <Link href="/proyectos/casa-horizonte">
+                    <Link href="/proyectos/casa-horizonte" scroll={false}>
                       Ver proyecto completo
                     </Link>
                     <ArrowRight className="ml-2 h-4 w-4" />
