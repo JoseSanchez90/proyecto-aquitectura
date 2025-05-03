@@ -5,11 +5,11 @@ import { FaXTwitter } from "react-icons/fa6"
 export function Footer() {
   return (
     <footer className="bg-muted/50 py-12">
-      <div className="container mx-auto px-4">
-        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
+      <div className="container mx-auto px-4 sm:px-10">
+        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4 border-t border-border pt-6">
           <div>
             <Link href="/" className="flex items-center">
-              <span className="flex text-2xl font-extrabold tracking-tight text-blue-600">MW<p className="text-gray-500">TRAZO</p></span>
+              <span className="flex text-2xl font-extrabold tracking-tight text-blue-600">MW<p className="text-gray-700">TRAZO</p></span>
             </Link>
             <p className="mt-4 text-sm text-muted-foreground">
               Transformando espacios, creando experiencias. Arquitectura innovadora y sostenible para el mundo de hoy y
@@ -58,11 +58,11 @@ export function Footer() {
                   Estudio
                 </Link>
               </li>
-              <li>
+              {/* <li>
                 <Link href="/blog" className="text-muted-foreground hover:text-primary">
                   Blog
                 </Link>
-              </li>
+              </li> */}
               <li>
                 <Link href="/contacto" className="text-muted-foreground hover:text-primary">
                   Contacto
@@ -118,7 +118,7 @@ export function Footer() {
         </div>
         <div className="mt-12 border-t border-border pt-6 text-center">
           <p className="text-sm text-muted-foreground">
-            © {new Date().getFullYear()} MWTRAZO. Todos los derechos reservados.
+            © {new Date().getFullYear()} MWTRAZO. Derechos reservados.
           </p>
         </div>
       </div>

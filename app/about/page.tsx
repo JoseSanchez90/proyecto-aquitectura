@@ -166,7 +166,7 @@ export default function AboutPage() {
         {/* Team Section */}
         <section className="container rounded-xl mx-auto px-4 py-24">
           <h2 className="mb-12 text-center text-3xl font-bold tracking-tight sm:text-4xl">Nuestro equipo</h2>
-          <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-2">
+          <div className="grid gap-16 sm:gap-8 sm:grid-cols-2 lg:grid-cols-2">
             <div className="grid justify-center text-center">
               <div className="mx-auto mb-4 overflow-hidden rounded-full">
                 <Image

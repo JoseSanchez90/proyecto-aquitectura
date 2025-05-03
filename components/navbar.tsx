@@ -35,7 +35,7 @@ export function Navbar() {
   return (
     <header
       className={`fixed top-0 z-50 sm:px-10 w-full transition-all duration-300 ${
-        isScrolled ? "sm:px-24 bg-white/80 shadow backdrop-blur-sm dark:bg-gray-950/90" : "bg-transparent text-white"
+        isScrolled ? "sm:px-24 sm:py-1 bg-white/80 shadow backdrop-blur-sm dark:bg-gray-950/90" : "bg-transparent text-white sm:py-4"
       }`}
     >
       <div className="container mx-auto flex h-16 items-center justify-between px-4">
@@ -44,16 +44,16 @@ export function Navbar() {
         </Link>
 
         <nav className="hidden space-x-8 md:flex">
-          <Link href="/" className="text-sm font-medium transition-colors hover:text-blue-700" scroll={false}>
+          <Link href="/" className="text-sm font-medium transition-colors hover:text-blue-800" scroll={false}>
             Inicio
           </Link>
-          <Link href="/proyectos" className="text-sm font-medium transition-colors hover:text-blue-700" scroll={false}>
+          <Link href="/proyectos" className="text-sm font-medium transition-colors hover:text-blue-800" scroll={false}>
             Proyectos
           </Link>
-          <Link href="/servicios" className="text-sm font-medium transition-colors hover:text-blue-700" scroll={false}>
+          <Link href="/servicios" className="text-sm font-medium transition-colors hover:text-blue-800" scroll={false}>
             Servicios
           </Link>
-          <Link href="/about" className="text-sm font-medium transition-colors hover:text-blue-700" scroll={false}>
+          <Link href="/about" className="text-sm font-medium transition-colors hover:text-blue-800" scroll={false}>
             Estudio
           </Link>
           {/* <Link href="/blog" className="text-sm font-medium transition-colors hover:text-blue-700">
@@ -78,34 +78,35 @@ export function Navbar() {
                 </DialogTitle>
               </Button>
             </SheetTrigger>
-            <SheetContent side="right" className="px-8">
-              <div className="flex flex-col space-y-4 pt-10">
-                <Link href="/" className="flex items-center gap-2 text-lg font-medium transition-colors hover:text-primary" scroll={false}>
+            <SheetContent side="right" className="px-10 py-10">
+              <div className="flex flex-col space-y-4">
+                <Link href="/" className="flex items-center gap-2 text-lg font-medium transition-colors text-blue-800" scroll={false}>
                   <ArrowRightIcon />
                   Inicio
                 </Link>
-                <Link href="/proyectos" className="flex items-center gap-2 text-lg font-medium transition-colors hover:text-primary" scroll={false}>
+                <Link href="/proyectos" className="flex items-center gap-2 text-lg font-medium transition-colors text-blue-800" scroll={false}>
                   <ArrowRightIcon />
                   Proyectos
                 </Link>
-                <Link href="/servicios" className="flex items-center gap-2 text-lg font-medium transition-colors hover:text-primary" scroll={false}>
+                <Link href="/servicios" className="flex items-center gap-2 text-lg font-medium transition-colors text-blue-800" scroll={false}>
                   <ArrowRightIcon />
                   Servicios
                 </Link>
-                <Link href="/about" className="flex items-center gap-2 text-lg font-medium transition-colors hover:text-primary" scroll={false}>
+                <Link href="/about" className="flex items-center gap-2 text-lg font-medium transition-colors text-blue-800" scroll={false}>
                   <ArrowRightIcon />
                   Estudio
                 </Link>
-                <Link href="/blog" className="flex items-center gap-2 text-lg font-medium transition-colors hover:text-primary" scroll={false}>
+                {/* <Link href="/blog" className="flex items-center gap-2 text-lg font-medium transition-colors text-blue-800" scroll={false}>
                   <ArrowRightIcon />
                   Blog
+                </Link> */}
+
+                <Link href="/contacto" scroll={false}>
+                  <Button variant="blueDark" className="mt-4 flex">
+                      Contáctanos
+                    <GrContact className="ml-1" />
+                  </Button>
                 </Link>
-                <Button className="mt-4 flex">
-                  <Link href="/contacto" scroll={false}>
-                    Contáctanos
-                  </Link>
-                  <GrContact className="ml-1" />
-                </Button>
               </div>
             </SheetContent>
           </Sheet>

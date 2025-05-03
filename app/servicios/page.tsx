@@ -32,7 +32,7 @@ export default function ServiciosPage() {
         </section>
 
         {/* Services Overview */}
-        <section className="container mx-auto px-16 py-16">
+        <section className="container mx-auto px-4 sm:px-16 py-16">
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
             <Card className="shadow-lg shadow-gray-400">
               <CardContent className="flex flex-col items-center p-6 text-center">
@@ -236,18 +236,18 @@ export default function ServiciosPage() {
         </section>
 
         {/* Featured Service */}
-        <section className="bg-blue-100 px-20 py-24">
+        <section className="bg-blue-100 px-4 sm:px-20 py-24">
           <div className="container mx-auto px-4">
             <div className="grid gap-12 md:grid-cols-2">
               <div className="flex flex-col justify-center">
                 <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">Arquitectura sostenible</h2>
-                <p className="mt-6 text-sm sm:text-lg">
+                <p className="mt-6">
                   En <strong>MWTRAZO</strong>, la sostenibilidad no es solo una tendencia, sino un compromiso fundamental en todos
                   nuestros proyectos. Nuestro enfoque de arquitectura sostenible integra consideraciones ambientales,
                   sociales y económicas para diseñar proyectos que sean respetuosos con el planeta y proporcionen espacios
                   saludables para sus ocupantes.
                 </p>
-                <ul className="mt-6 space-y-2 text-sm sm:text-lg">
+                <ul className="mt-6 space-y-2">
                   <li className="flex items-center">
                     <Check className="mr-2 h-5 w-5 text-primary" />
                     <span>Diseño bioclimático adaptado al entorno</span>
