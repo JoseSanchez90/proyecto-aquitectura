@@ -9,6 +9,7 @@ import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
 import { GrContact } from "react-icons/gr"
 import { DialogTitle } from "@radix-ui/react-dialog"
 import { MdEmail } from "react-icons/md"
+import { BsWhatsapp } from "react-icons/bs"
 
 export function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false)
@@ -62,10 +63,16 @@ export function Navbar() {
         </nav>
 
         <div className="flex items-center gap-4">
+          <Button variant="green" asChild className="hidden md:inline-flex">
+            <Link href="http://wa.me/51947224879" target="_autoblank" scroll={false}>
+              <BsWhatsapp className="mr-1" />
+              WhatsApp
+            </Link>
+          </Button>
           <Button variant="blueDark" asChild className="hidden md:inline-flex">
             <Link href="/contacto" scroll={false}>
-              Contáctanos
-              <MdEmail className="ml-1" />
+              <MdEmail className="mr-1" />
+              Contáctanos  
             </Link>
           </Button>
 
@@ -102,9 +109,15 @@ export function Navbar() {
                 </Link> */}
 
                 <Link href="/contacto" scroll={false}>
-                  <Button variant="blueDark" className="mt-4 flex">
+                  <Button variant="blueDark" className="mt-4 flex w-32">
+                    <MdEmail className="mr-1" />
                       Contáctanos
-                    <GrContact className="ml-1" />
+                  </Button>
+                </Link>
+                <Link href="http://wa.me/51947224879" target="_autoblank">
+                  <Button variant="green" className="flex w-32">
+                    <BsWhatsapp className="mr-1" />
+                      WhatsApp
                   </Button>
                 </Link>
               </div>

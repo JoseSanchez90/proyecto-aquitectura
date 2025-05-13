@@ -36,14 +36,18 @@ export default function Home() {
             <p className="mt-6 max-w-2xl font-medium text-lg text-gray-200">
               Arquitectura innovadora y sostenible para el mundo de hoy y mañana
             </p>
-            <div className="mt-10 flex flex-col gap-4 sm:flex-row">
+            <div className="mt-10 flex gap-4">
               <Button variant="blueDark" size="lg" className="cursor-pointer">
-                <Link href="/proyectos" scroll={false}>Ver proyectos</Link>
-                <FaRegArrowAltCircleRight className="ml-1" />
+                <Link href="/proyectos" scroll={false} className="flex items-center gap-1">
+                  Ver proyectos
+                  <FaRegArrowAltCircleRight className="ml-1" />
+                </Link>
               </Button>
               <Button size="lg" variant="white" className="cursor-pointer">
-                <Link href="http://wa.me/51960041583" target="_autoblank">Conversemos</Link>
-                <BsWhatsapp className="ml-1" />
+                <Link href="http://wa.me/51960041583" target="_autoblank" className="flex items-center gap-1">
+                  Conversemos
+                  <BsWhatsapp className="ml-1" />
+                </Link>
               </Button>
             </div>
           </div>
