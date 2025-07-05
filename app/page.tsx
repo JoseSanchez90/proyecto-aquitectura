@@ -75,8 +75,8 @@ export default function Home() {
                   resisten el paso del tiempo y respetan el entorno natural.
                 </p>
                 <div className="mt-8">
-                  <Button variant="blueDark" className="">
-                    <Link href="/about" scroll={false}>Conocer más sobre nosotros</Link>
+                  <Button variant="blueDark" className="cursor-pointer">
+                    <Link href="/about" scroll={false}>Conoce más sobre nosotros</Link>
                     <Building2Icon className="ml-2" />
                   </Button>
                 </div>
@@ -201,7 +201,7 @@ export default function Home() {
             </Tabs>
 
             <div className="mt-12 text-center">
-              <Button variant="blueDark">
+              <Button variant="blueDark" className="cursor-pointer">
                 <FiPlusCircle className="mr-1" />
                 <Link href="/proyectos" scroll={false}>Ver todos los proyectos</Link>
               </Button>

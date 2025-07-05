@@ -28,7 +28,7 @@ export default function AboutPage() {
           <div className="absolute inset-0 flex flex-col text-white items-center justify-center px-4 text-center">
             <h1 className="max-w-4xl text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl">Nuestro estudio</h1>
             <p className="mt-6 max-w-2xl text-lg font-medium">
-              Conoce nuestra historia, filosofía y el equipo detrás de <strong className="text-blue-500">MW</strong><strong>TRAZO</strong>
+              Conoce nuestra historia, filosofía y el equipo detrás de <button className="px-3 py-1 bg-gray-900 rounded-full"><strong className="text-blue-500">MW</strong><strong>TRAZO</strong></button>
             </p>
           </div>
         </section>

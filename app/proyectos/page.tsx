@@ -228,7 +228,7 @@ export default function ProyectosPage() {
                   </li>
                 </ul>
                 <div className="mt-8">
-                  <Button variant="blueDark">
+                  <Button variant="blueDark" className="cursor-pointer">
                     <Link href="/proyectos/casa-horizonte" scroll={false}>
                       Ver proyecto completo
                     </Link>
