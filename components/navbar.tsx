@@ -3,10 +3,8 @@
 import { useEffect, useState } from "react"
 import Link from "next/link"
 import { ArrowRightIcon, Menu } from "lucide-react"
-
 import { Button } from "@/components/ui/button"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
-import { GrContact } from "react-icons/gr"
 import { DialogTitle } from "@radix-ui/react-dialog"
 import { MdEmail } from "react-icons/md"
 import { BsWhatsapp } from "react-icons/bs"
@@ -36,7 +34,7 @@ export function Navbar() {
   return (
     <header
       className={`fixed top-0 z-50 sm:px-10 w-full transition-all duration-300 ${
-        isScrolled ? "sm:px-24 sm:py-1 bg-white/80 shadow backdrop-blur-sm dark:bg-gray-950/90" : "bg-transparent text-white sm:py-4"
+        isScrolled ? "sm:px-24 sm:py-1 bg-white/80 shadow backdrop-blur-sm" : "bg-transparent sm:py-4"
       }`}
     >
       <div className="container mx-auto flex h-16 items-center justify-between px-4">
@@ -44,17 +42,17 @@ export function Navbar() {
           <span className="flex text-2xl font-extrabold tracking-tight text-blue-500">MW<p className={`transition-all duration-300 ${ isScrolled ? "text-black" : "text-white"}`}>TRAZO</p></span>
         </Link>
 
-        <nav className="hidden space-x-8 md:flex">
-          <Link href="/" className="text-sm font-medium transition-colors hover:text-blue-800" scroll={false}>
+        <nav className={`hidden space-x-8 md:flex transition-all duration-100 ${ isScrolled ? "text-black" : "text-white" }`}>
+          <Link href="/" className="text-base font-medium transition-colors" scroll={false}>
             Inicio
           </Link>
-          <Link href="/proyectos" className="text-sm font-medium transition-colors hover:text-blue-800" scroll={false}>
+          <Link href="/proyectos" className="text-base font-medium transition-colors" scroll={false}>
             Proyectos
           </Link>
-          <Link href="/servicios" className="text-sm font-medium transition-colors hover:text-blue-800" scroll={false}>
+          <Link href="/servicios" className="text-base font-medium transition-colors" scroll={false}>
             Servicios
           </Link>
-          <Link href="/about" className="text-sm font-medium transition-colors hover:text-blue-800" scroll={false}>
+          <Link href="/estudio" className="text-base font-medium transition-colors" scroll={false}>
             Estudio
           </Link>
           {/* <Link href="/blog" className="text-sm font-medium transition-colors hover:text-blue-700">
@@ -63,12 +61,6 @@ export function Navbar() {
         </nav>
 
         <div className="flex items-center gap-4">
-          <Button variant="green" asChild className="hidden md:inline-flex">
-            <Link href="http://wa.me/51947224879" target="_autoblank" scroll={false}>
-              <BsWhatsapp className="mr-1" />
-              WhatsApp
-            </Link>
-          </Button>
           <Button variant="blueDark" asChild className="hidden md:inline-flex">
             <Link href="/contacto" scroll={false}>
               <MdEmail className="mr-1" />
@@ -87,26 +79,22 @@ export function Navbar() {
             </SheetTrigger>
             <SheetContent side="right" className="px-10 py-10">
               <div className="flex flex-col space-y-4">
-                <Link href="/" className="flex items-center gap-2 text-lg font-medium transition-colors text-blue-800" scroll={false}>
+                <Link href="/" className="flex items-center gap-2 text-lg font-medium transition-colors text-blue-200" scroll={false}>
                   <ArrowRightIcon />
                   Inicio
                 </Link>
-                <Link href="/proyectos" className="flex items-center gap-2 text-lg font-medium transition-colors text-blue-800" scroll={false}>
+                <Link href="/proyectos" className="flex items-center gap-2 text-lg font-medium transition-colors text-blue-200" scroll={false}>
                   <ArrowRightIcon />
                   Proyectos
                 </Link>
-                <Link href="/servicios" className="flex items-center gap-2 text-lg font-medium transition-colors text-blue-800" scroll={false}>
+                <Link href="/servicios" className="flex items-center gap-2 text-lg font-medium transition-colors text-blue-200" scroll={false}>
                   <ArrowRightIcon />
                   Servicios
                 </Link>
-                <Link href="/about" className="flex items-center gap-2 text-lg font-medium transition-colors text-blue-800" scroll={false}>
+                <Link href="/about" className="flex items-center gap-2 text-lg font-medium transition-colors text-blue-200" scroll={false}>
                   <ArrowRightIcon />
                   Estudio
                 </Link>
-                {/* <Link href="/blog" className="flex items-center gap-2 text-lg font-medium transition-colors text-blue-800" scroll={false}>
-                  <ArrowRightIcon />
-                  Blog
-                </Link> */}
 
                 <Link href="/contacto" scroll={false}>
                   <Button variant="blueDark" className="mt-4 flex w-32">

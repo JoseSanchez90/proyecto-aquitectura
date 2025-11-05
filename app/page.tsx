@@ -1,34 +1,34 @@
-import Image from "next/image"
-import Link from "next/link"
+import Image from "next/image";
+import Link from "next/link";
 
-import { Button } from "@/components/ui/button"
-import { Card, CardContent } from "@/components/ui/card"
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
-import { ProjectCard } from "@/components/project-card"
-import { Navbar } from "@/components/navbar"
-import { Footer } from "@/components/footer"
-import { TestimonialCard } from "@/components/testimonial-card"
-import ImagePrimary from "@/public/img/image01.webp"
-import ImageSecondary from "@/public/img/image02.webp"
-import { FaRegArrowAltCircleRight } from "react-icons/fa"
-import { FiPlusCircle } from "react-icons/fi"
-import { Building2Icon } from "lucide-react"
-import { BsWhatsapp } from "react-icons/bs"
+import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { ProjectCard } from "@/components/project-card";
+import { Navbar } from "@/components/navbar";
+import { Footer } from "@/components/footer";
+import { TestimonialCard } from "@/components/testimonial-card";
+import ImageSecondary from "@/public/img/image02.webp";
+import { FaRegArrowAltCircleRight } from "react-icons/fa";
+import { FiPlusCircle } from "react-icons/fi";
+import { Building2Icon } from "lucide-react";
+import { BsWhatsapp } from "react-icons/bs";
 
 export default function Home() {
   return (
     <div className="flex min-h-screen flex-col">
       <Navbar />
-      <main className="flex-1">
+      <main className="w-full h-full">
         {/* Hero Section */}
-        <section className="relative h-[90vh] w-full">
-          <Image
-            src={ImagePrimary}
-            alt="Diseño arquitectónico moderno"
-            fill
-            className="object-cover brightness-[0.6]"
-            priority
+        <section className="relative h-screen overflow-hidden shadow-xl">
+          <video
+            src="/videos/portada-mwtrazo.mp4"
+            autoPlay
+            loop
+            muted
+            className="absolute inset-0 h-full w-full object-cover"
           />
+          <div className="absolute inset-0 bg-black/50"></div>
           <div className="absolute inset-0 flex flex-col items-center justify-center px-4 text-center">
             <h1 className="max-w-4xl text-white text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl">
               Transformando espacios, creando experiencias
@@ -38,13 +38,21 @@ export default function Home() {
             </p>
             <div className="mt-10 flex gap-4">
               <Button variant="blueDark" size="lg" className="cursor-pointer">
-                <Link href="/proyectos" scroll={false} className="flex items-center gap-1">
+                <Link
+                  href="/proyectos"
+                  scroll={false}
+                  className="flex items-center gap-1"
+                >
                   Ver proyectos
                   <FaRegArrowAltCircleRight className="ml-1" />
                 </Link>
               </Button>
               <Button size="lg" variant="white" className="cursor-pointer">
-                <Link href="http://wa.me/51960041583" target="_autoblank" className="flex items-center gap-1">
+                <Link
+                  href="http://wa.me/51960041583"
+                  target="_autoblank"
+                  className="flex items-center gap-1"
+                >
                   Conversemos
                   <BsWhatsapp className="ml-1" />
                 </Link>
@@ -65,18 +73,24 @@ export default function Home() {
             />
             <div className="absolute inset-0 flex flex-col items-center justify-center p-8 text-center ">
               <div className="max-w-3xl text-white">
-                <h2 className="text-3xl font-bold tracking-tight sm:text-5xl">Sobre el estudio</h2>
+                <h2 className="text-3xl font-bold tracking-tight sm:text-5xl">
+                  Sobre el estudio
+                </h2>
                 <p className="mt-6 font-medium text-sm sm:text-xl">
-                  Fundado en 2015, nuestro estudio de arquitectura se especializa en diseños innovadores y sostenibles
-                  que transforman espacios y mejoran la vida de las personas.
+                  Fundado en 2015, nuestro estudio de arquitectura se
+                  especializa en diseños innovadores y sostenibles que
+                  transforman espacios y mejoran la vida de las personas.
                 </p>
                 <p className="mt-4 font-medium text-sm md:text-xl">
-                  Combinamos la estética contemporánea con la funcionalidad práctica, creando edificios y espacios que
-                  resisten el paso del tiempo y respetan el entorno natural.
+                  Combinamos la estética contemporánea con la funcionalidad
+                  práctica, creando edificios y espacios que resisten el paso
+                  del tiempo y respetan el entorno natural.
                 </p>
                 <div className="mt-8">
                   <Button variant="blueDark" className="cursor-pointer">
-                    <Link href="/about" scroll={false}>Conoce más sobre nosotros</Link>
+                    <Link href="/about" scroll={false}>
+                      Conoce más sobre nosotros
+                    </Link>
                     <Building2Icon className="ml-2" />
                   </Button>
                 </div>
@@ -89,7 +103,9 @@ export default function Home() {
         <section className=" py-24">
           <div className="container mx-auto px-4">
             <div className="mb-12 text-center">
-              <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">Proyectos destacados</h2>
+              <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
+                Proyectos destacados
+              </h2>
               <p className="mt-4 text-muted-foreground">
                 Explora nuestra selección de proyectos innovadores y sostenibles
               </p>
@@ -203,7 +219,9 @@ export default function Home() {
             <div className="mt-12 text-center">
               <Button variant="blueDark" className="cursor-pointer">
                 <FiPlusCircle className="mr-1" />
-                <Link href="/proyectos" scroll={false}>Ver todos los proyectos</Link>
+                <Link href="/proyectos" scroll={false}>
+                  Ver todos los proyectos
+                </Link>
               </Button>
             </div>
           </div>
@@ -212,9 +230,12 @@ export default function Home() {
         {/* Services Section */}
         <section className="container mx-auto px-4 py-24">
           <div className="mb-12 text-center">
-            <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">Nuestros servicios</h2>
+            <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
+              Nuestros servicios
+            </h2>
             <p className="mt-4 text-muted-foreground">
-              Ofrecemos soluciones arquitectónicas completas para cada etapa de tu proyecto
+              Ofrecemos soluciones arquitectónicas completas para cada etapa de
+              tu proyecto
             </p>
           </div>
 
@@ -238,9 +259,12 @@ export default function Home() {
                     <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" />
                   </svg>
                 </div>
-                <h3 className="mb-2 text-xl font-medium">Diseño arquitectónico</h3>
+                <h3 className="mb-2 text-xl font-medium">
+                  Diseño arquitectónico
+                </h3>
                 <p className="text-muted-foreground">
-                  Creamos diseños innovadores y funcionales que reflejan la visión y necesidades de nuestros clientes.
+                  Creamos diseños innovadores y funcionales que reflejan la
+                  visión y necesidades de nuestros clientes.
                 </p>
               </CardContent>
             </Card>
@@ -265,9 +289,12 @@ export default function Home() {
                     <path d="M9 21V9" />
                   </svg>
                 </div>
-                <h3 className="mb-2 text-xl font-medium">Planificación urbana</h3>
+                <h3 className="mb-2 text-xl font-medium">
+                  Planificación urbana
+                </h3>
                 <p className="text-muted-foreground">
-                  Desarrollamos planes maestros y estrategias urbanas que mejoran la calidad de vida en las ciudades.
+                  Desarrollamos planes maestros y estrategias urbanas que
+                  mejoran la calidad de vida en las ciudades.
                 </p>
               </CardContent>
             </Card>
@@ -291,9 +318,12 @@ export default function Home() {
                     <path d="m9 12 2 2 4-4" />
                   </svg>
                 </div>
-                <h3 className="mb-2 text-xl font-medium">Arquitectura sostenible</h3>
+                <h3 className="mb-2 text-xl font-medium">
+                  Arquitectura sostenible
+                </h3>
                 <p className="text-muted-foreground">
-                  Implementamos soluciones ecológicas y eficientes que minimizan el impacto ambiental de los edificios.
+                  Implementamos soluciones ecológicas y eficientes que minimizan
+                  el impacto ambiental de los edificios.
                 </p>
               </CardContent>
             </Card>
@@ -321,9 +351,12 @@ export default function Home() {
                     <rect width="7" height="5" x="10" y="12" rx="1" />
                   </svg>
                 </div>
-                <h3 className="mb-2 text-xl font-medium">Diseño de interiores</h3>
+                <h3 className="mb-2 text-xl font-medium">
+                  Diseño de interiores
+                </h3>
                 <p className="text-muted-foreground">
-                  Creamos espacios interiores funcionales y estéticos que reflejan la personalidad de nuestros clientes.
+                  Creamos espacios interiores funcionales y estéticos que
+                  reflejan la personalidad de nuestros clientes.
                 </p>
               </CardContent>
             </Card>
@@ -346,9 +379,12 @@ export default function Home() {
                     <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z" />
                   </svg>
                 </div>
-                <h3 className="mb-2 text-xl font-medium">Consultoría técnica</h3>
+                <h3 className="mb-2 text-xl font-medium">
+                  Consultoría técnica
+                </h3>
                 <p className="text-muted-foreground">
-                  Ofrecemos asesoramiento experto en normativas, materiales y técnicas constructivas.
+                  Ofrecemos asesoramiento experto en normativas, materiales y
+                  técnicas constructivas.
                 </p>
               </CardContent>
             </Card>
@@ -377,7 +413,8 @@ export default function Home() {
                 </div>
                 <h3 className="mb-2 text-xl font-medium">Dirección de obra</h3>
                 <p className="text-muted-foreground">
-                  Supervisamos la ejecución de los proyectos para garantizar la calidad y el cumplimiento de los plazos.
+                  Supervisamos la ejecución de los proyectos para garantizar la
+                  calidad y el cumplimiento de los plazos.
                 </p>
               </CardContent>
             </Card>
@@ -388,9 +425,12 @@ export default function Home() {
         <section className="bg-muted/50 py-24">
           <div className="container mx-auto px-4">
             <div className="mb-12 text-center">
-              <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">Lo que dicen nuestros clientes</h2>
+              <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
+                Lo que dicen nuestros clientes
+              </h2>
               <p className="mt-4 text-muted-foreground">
-                Testimonios de quienes han confiado en nuestro estudio para sus proyectos
+                Testimonios de quienes han confiado en nuestro estudio para sus
+                proyectos
               </p>
             </div>
 
@@ -419,5 +459,5 @@ export default function Home() {
       </main>
       <Footer />
     </div>
-  )
+  );
 }
